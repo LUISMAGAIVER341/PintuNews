@@ -1,0 +1,16 @@
+{
+  "name": "pintunews",
+  "version": "1.0.0",
+  "description": "É meu trabalho de redação kkk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss build src/styles.css -o dist/styles.css"
+  },
+  "keywords": [],
+  "author": "leakzz341 <“luismiguel.abs09@gmail.com”>",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinto News</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="image-removebg-preview.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+    font-family: 'MinhaFonte';
+    src: url('s.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} @font-face {
+    font-family: 'p';
+    src: url('p.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: 'p2';
+    src: url('p2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'MinhaFonte', sans-serif; /* Inclua uma fonte de fallback */
+    font-size: 500%;
+    margin: 0px;
+    padding: 0px;
+}
+#pm {
+    font-family: 'p';
+    font-size: 30%;
+}
+#xq {
+    font-size: 50%;
+    font-family: 'p';
+    color: rgb(250, 247, 247);
+    justify-self: center;
+    background-color: #395fb2;
+}
+
+#modalzin {
+    display: flex;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    background-color: rgba(230, 230, 230, 0.893);
+    height: 500px;
+    width: 500px;
+    justify-self: center;
+    transition: transform 0.5s ease;
+    transition: display 0.5s ease;
+}
+#modalzin:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+#modalzin:hover {
+    transform: scale(1.03);
+}
+.containe {
+    position: absolute;
+    width: 99vw;
+    height: 99vh;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    place-items: center;
+}
+.wrape {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+#ore {
+    margin: 0px;
+    padding: 0px;
+    scale: 0.5;
+    position: absolute;
+    top: 0px;
+}
+#textboy {
+    font-family: 'p2';
+    position: absolute;
+    top: 10px;
+    font-size: 25%;
+}
+#butonnn {
+    font-family: 'p2';
+    width: 480px;
+    height: 50px;
+    font-size: 30%;
+    position: absolute;
+    bottom: 10px;
+    background-color: blue;
+    left: 10px;
+    border-radius: 30px;
+    color: white;
+    transition: transform 0.5s ease;
+}
+#butonnn:hover {
+    transform: scale(1.03);
+}
+
+
+
+    </style>
+    <script>
+        tailwind.config = {
+          darkMode: media,
+        }
+      </script>
+</head>
+<body class="bg-gray-300">
+    <header class="flex-row items-center justify-center bg-yellow-50 h-[225px] text-white">
+        <div class="flex flex-row items-center justify-center">
+            <img src="image-removebg-preview.png" width="200" alt="">
+            <h1 id="headdd" class="text-black flex text-center">Pinto News</h1>
+        </div>
+    </header>
+    <main class="h-screen">
+        <div class="wrape">
+            <div class="wrapper">
+                <div class="absolute bg-white h-[500px] w-[400px] top-[275px] rounded-[30px] left-[1150px]">
+                    <img class="absolute top-[50px] left-[50px] rounded-t-[30px]" width="300px" src="lukas.png" alt="">
+                    <div class="text-center absolute bg-gray-100 font-bold w-[400px] h-[90px] rounded-b-[30px] bottom-[0px]">
+                        <p id="pm">SAIU!!!! Lucas Silva confirma sua altura em 1.25 metros</p>
+                    </div>
+                </div>
+                <div class="absolute rounded-[30px] left-[500px] bg-white top-[395px] h-[450px] w-[600px]">
+                    <img class="w-[200px] rounded-tr-[30px] right-[50px] absolute top-[60px]" src="cecii.png" alt="">
+                    <img class="w-[200px] rounded-tl-[30px] left-[60px] absolute top-[60px] " src="dafny.png" alt="">
+                    <div class="w-[600px] absolute bottom-[0] text-center font-bold rounded-b-[30px]  h-[130px] bg-gray-100">
+                        <h5 id="pm">As atletas Dafny e Cecília choram no amistoso contra o alpha por não jogarem.</h5>
+                    </div>
+                </div>
+                <div id="xq" class="justify-center w-[600px] h-[70px] rounded-[40px] absolute left-[500px] top-[275px]">
+                    <p class="absolute left-[15px] top-[5px]">Xique Xique-BA 99°C </p>
+                    <img src="weather-2021-12-07.png" class="w-[70px] rounded-[40px] right-[0px] absolute" alt="">
+                </div>
+                <div class="absolute top-[275px] left-[50px] w-[400px] rounded-[30px] items-center justify-center h-[500px] bg-white">
+                    <img src="casal.png" class="absolute left-[50px] justify-center rounded-t-[30px] top-[55px]" width="300px" alt="">
+                    <div class="absolute font-bold bg-gray-100 w-[400px] h-[90px] text-center bottom-[0px] rounded-bl-[30px] rounded-br-[30px]">
+                        <h5 id="pm">Pedro Miguel não desiste da Laís. "Seguimos na luta"</h5>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="containe">
+            <div id="modalzin">
+                <img src="oreo.png" id="ore" alt="">
+                <p class="absolute text-center" id="textboy">A gnt n gosta de cookies pq é mt invasivo ent usamos oreo</p>
+                <button id="butonnn" onclick="document.getElementById('modalzin').style.display = 'none';">Aceitar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-lg text-white p-4 text-center">
+        <p>© 2024 Todos os direitos reservados pro pintu. what to talk?</p>
+    </footer>
+</body>
+</html>
