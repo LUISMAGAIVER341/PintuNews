@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="image-removebg-preview.png" type="image/x-icon">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style>
-        @font-face {
+                @font-face {
     font-family: 'MinhaFonte';
     src: url('s.ttf') format('truetype');
     font-weight: normal;
@@ -49,8 +49,7 @@ body {
     margin: 0px;
     padding: 0px;
     border-radius: 30px;
-    backdrop-filter: blur(8px);
-    background-color: rgba(230, 230, 230, 0.893);
+    opacity: 0.98;
     height: 500px;
     width: 500px;
     justify-self: center;
@@ -107,36 +106,29 @@ body {
 #butonnn:hover {
     transform: scale(1.03);
 }
-
-
-
     </style>
-    <script>
-        tailwind.config = {
-          darkMode: media,
-        }
-      </script>
+    <!-- <link rel="stylesheet" href="./outaoba.css"> -->
 </head>
-<body class="bg-gray-300">
-    <header class="flex-row items-center justify-center bg-yellow-50 h-[225px] text-white">
+<body class="dark:bg-gray-700 bg-gray-300">
+    <header class="flex-row items-center justify-center dark:bg-gray-600 bg-yellow-50 h-[225px] text-white">
         <div class="flex flex-row items-center justify-center">
             <img src="image-removebg-preview.png" width="200" alt="">
-            <h1 id="headdd" class="text-black flex text-center">Pinto News</h1>
+            <h1 id="headdd" class="text-black dark:text-white flex text-center">Pinto News</h1>
         </div>
     </header>
     <main class="h-screen">
         <div class="wrape">
             <div class="wrapper">
-                <div class="absolute bg-white h-[500px] w-[400px] top-[275px] rounded-[30px] left-[1150px]">
+                <div class="absolute dark:bg-gray-500 h-[500px] w-[400px] top-[275px] rounded-[30px] left-[1150px]">
                     <img class="absolute top-[50px] left-[50px] rounded-t-[30px]" width="300px" src="lukas.png" alt="">
-                    <div class="text-center absolute bg-gray-100 font-bold w-[400px] h-[90px] rounded-b-[30px] bottom-[0px]">
+                    <div class="text-center absolute bg-white text-black dark:bg-gray-600 dark:text-white font-bold w-[400px] h-[90px] rounded-b-[30px] bottom-[0px]">
                         <p id="pm">SAIU!!!! Lucas Silva confirma sua altura em 1.25 metros</p>
                     </div>
                 </div>
-                <div class="absolute rounded-[30px] left-[500px] bg-white top-[395px] h-[450px] w-[600px]">
+                <div class="absolute rounded-[30px] left-[500px] dark:bg-gray-500 bg-white text-black dark:text-white top-[395px] h-[450px] w-[600px]">
                     <img class="w-[200px] rounded-tr-[30px] right-[50px] absolute top-[60px]" src="cecii.png" alt="">
                     <img class="w-[200px] rounded-tl-[30px] left-[60px] absolute top-[60px] " src="dafny.png" alt="">
-                    <div class="w-[600px] absolute bottom-[0] text-center font-bold rounded-b-[30px]  h-[130px] bg-gray-100">
+                    <div class="w-[600px] absolute bottom-[0] text-center font-bold rounded-b-[30px]  h-[130px] bg-gray-600">
                         <h5 id="pm">As atletas Dafny e Cecília choram no amistoso contra o alpha por não jogarem.</h5>
                     </div>
                 </div>
@@ -144,19 +136,22 @@ body {
                     <p class="absolute left-[15px] top-[5px]">Xique Xique-BA 99°C </p>
                     <img src="weather-2021-12-07.png" class="w-[70px] rounded-[40px] right-[0px] absolute" alt="">
                 </div>
-                <div class="absolute top-[275px] left-[50px] w-[400px] rounded-[30px] items-center justify-center h-[500px] bg-white">
+                <div class="absolute top-[275px] left-[50px] w-[400px] rounded-[30px] items-center justify-center h-[500px] bg-white dark:bg-gray-500 dark:text-white text-black">
                     <img src="casal.png" class="absolute left-[50px] justify-center rounded-t-[30px] top-[55px]" width="300px" alt="">
-                    <div class="absolute font-bold bg-gray-100 w-[400px] h-[90px] text-center bottom-[0px] rounded-bl-[30px] rounded-br-[30px]">
+                    <div class="absolute font-bold bg-white dark:bg-gray-600 w-[400px] h-[90px] text-center bottom-[0px] rounded-bl-[30px] rounded-br-[30px]">
                         <h5 id="pm">Pedro Miguel não desiste da Laís. "Seguimos na luta"</h5>
                     </div>
+                </div>
+                <div class="top-[895px] left-[500px] w-[600px] absolute h-[100px] bg-black">
+                    
                 </div>
                 
             </div>
         </div>
         <div class="containe">
-            <div id="modalzin">
+            <div id="modalzin" class="bg-gray-500 backdrop-blur-[100px]">
                 <img src="oreo.png" id="ore" alt="">
-                <p class="absolute text-center" id="textboy">A gnt n gosta de cookies pq é mt invasivo ent usamos oreo</p>
+                <p class="absolute text-center text-black dark:text-white" id="textboy">A gnt n gosta de cookies pq é mt invasivo ent usamos oreo</p>
                 <button id="butonnn" onclick="document.getElementById('modalzin').style.display = 'none';">Aceitar</button>
             </div>
         </div>
